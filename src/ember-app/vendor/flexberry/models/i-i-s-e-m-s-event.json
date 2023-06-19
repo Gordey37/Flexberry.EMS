@@ -1,0 +1,211 @@
+﻿{
+  "name": "IISEMSEvent",
+  "modelName": "i-i-s-e-m-s-event",
+  "className": "Event",
+  "nameSpace": "IIS.EMS",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "eventEndDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "eventStartDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "maxNumberOfParticipants",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "place",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ticketPrice",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "organizer",
+      "relatedTo": "i-i-s-e-m-s-organizer",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "EventE",
+      "modelName": "i-i-s-e-m-s-event",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "eventStartDate",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "eventEndDate",
+          "caption": "Дата окончания",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "place",
+          "caption": "Место",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "maxNumberOfParticipants",
+          "caption": "Макс. число участников",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "ticketPrice",
+          "caption": "Цена билета",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Organizer",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Имя организатора",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Организатор",
+          "name": "organizer",
+          "relatedTo": "i-i-s-e-m-s-organizer",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "EventL",
+      "modelName": "i-i-s-e-m-s-event",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "eventStartDate",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "eventEndDate",
+          "caption": "Дата окончания",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "place",
+          "caption": "Место",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "maxNumberOfParticipants",
+          "caption": "Макс. число участников",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "ticketPrice",
+          "caption": "Цена билета",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Organizer",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Имя организатора",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Имя организатора",
+          "name": "organizer",
+          "relatedTo": "i-i-s-e-m-s-organizer",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

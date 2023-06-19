@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-e-m-s-organizer-e",
+  "editForm": "i-i-s-e-m-s-organizer-e",
+  "external": false,
+  "caption": "Организаторы",
+  "name": "IISEMSOrganizerL",
+  "className": "OrganizerL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-e-m-s-organizer",
+      "modelProjection": "OrganizerL"
+    }
+  ]
+}

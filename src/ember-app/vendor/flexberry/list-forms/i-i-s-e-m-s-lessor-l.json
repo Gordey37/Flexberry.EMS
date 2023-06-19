@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-e-m-s-lessor-e",
+  "editForm": "i-i-s-e-m-s-lessor-e",
+  "external": false,
+  "caption": "Арендодатели",
+  "name": "IISEMSLessorL",
+  "className": "LessorL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-e-m-s-lessor",
+      "modelProjection": "LessorL"
+    }
+  ]
+}

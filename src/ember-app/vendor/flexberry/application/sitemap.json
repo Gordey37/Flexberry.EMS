@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "EMS",
+  "applicationTitle": "EMS",
+  "items": [
+    {
+      "link": null,
+      "menuName": "event-management-system",
+      "caption": "Event Management System",
+      "title": "Event Management System",
+      "children": [
+        {
+          "link": "i-i-s-e-m-s-organizer-l",
+          "menuName": null,
+          "caption": "Организаторы",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-e-m-s-lessor-l",
+          "menuName": null,
+          "caption": "Арендодатели",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-e-m-s-event-l",
+          "menuName": null,
+          "caption": "Мероприятия",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-e-m-s-participant-l",
+          "menuName": null,
+          "caption": "Участники",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

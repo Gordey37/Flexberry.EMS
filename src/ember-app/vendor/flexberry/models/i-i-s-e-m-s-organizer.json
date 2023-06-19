@@ -1,0 +1,159 @@
+﻿{
+  "name": "IISEMSOrganizer",
+  "modelName": "i-i-s-e-m-s-organizer",
+  "className": "Organizer",
+  "nameSpace": "IIS.EMS",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "eventHost",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "eventPlan",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "mail",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "phoneNumber",
+      "type": "decimal",
+      "flexberryType": "decimal",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "OrganizerE",
+      "modelName": "i-i-s-e-m-s-organizer",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "phoneNumber",
+          "caption": "Телефонный номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "eventHost",
+          "caption": "Организуемое мероприятие",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "mail",
+          "caption": "Почта",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "eventPlan",
+          "caption": "План мероприятия",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "password",
+          "caption": "Пароль",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "OrganizerL",
+      "modelName": "i-i-s-e-m-s-organizer",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "phoneNumber",
+          "caption": "Телефонный номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "eventHost",
+          "caption": "Организуемое мероприятие",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "mail",
+          "caption": "Почта",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "eventPlan",
+          "caption": "План мероприятия",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "password",
+          "caption": "Пароль",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

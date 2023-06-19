@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Event",
+      "projection": "EventL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Арендодатели",
+  "name": "IISEMSLessorE",
+  "className": "LessorE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-e-m-s-lessor",
+      "modelProjection": "LessorE"
+    }
+  ]
+}

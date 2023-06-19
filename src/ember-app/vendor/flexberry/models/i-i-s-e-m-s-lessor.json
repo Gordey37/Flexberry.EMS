@@ -1,0 +1,211 @@
+﻿{
+  "name": "IISEMSLessor",
+  "modelName": "i-i-s-e-m-s-lessor",
+  "className": "Lessor",
+  "nameSpace": "IIS.EMS",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "availableItems",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "availableRooms",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "mail",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "phoneNumber",
+      "type": "decimal",
+      "flexberryType": "decimal",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "event",
+      "relatedTo": "i-i-s-e-m-s-event",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "LessorE",
+      "modelName": "i-i-s-e-m-s-lessor",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "mail",
+          "caption": "Почта",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "availableItems",
+          "caption": "Доступные предметы",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "phoneNumber",
+          "caption": "Телефонный номер",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "availableRooms",
+          "caption": "Доступные помещения",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "password",
+          "caption": "Пароль",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Event",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Имя меропрития",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Мероприятие",
+          "name": "event",
+          "relatedTo": "i-i-s-e-m-s-event",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "LessorL",
+      "modelName": "i-i-s-e-m-s-lessor",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "mail",
+          "caption": "Почта",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "availableItems",
+          "caption": "Доступные предметы",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "phoneNumber",
+          "caption": "Телефонный номер",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "availableRooms",
+          "caption": "Доступные помещения",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "password",
+          "caption": "Пароль",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Event",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Имя мероприятия",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Имя мероприятия",
+          "name": "event",
+          "relatedTo": "i-i-s-e-m-s-event",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

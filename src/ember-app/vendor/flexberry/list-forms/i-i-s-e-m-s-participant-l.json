@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-e-m-s-participant-e",
+  "editForm": "i-i-s-e-m-s-participant-e",
+  "external": false,
+  "caption": "Участники",
+  "name": "IISEMSParticipantL",
+  "className": "ParticipantL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-e-m-s-participant",
+      "modelProjection": "ParticipantL"
+    }
+  ]
+}

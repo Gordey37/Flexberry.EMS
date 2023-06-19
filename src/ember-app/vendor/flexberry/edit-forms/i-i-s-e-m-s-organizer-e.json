@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Организаторы",
+  "name": "IISEMSOrganizerE",
+  "className": "OrganizerE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-e-m-s-organizer",
+      "modelProjection": "OrganizerE"
+    }
+  ]
+}
