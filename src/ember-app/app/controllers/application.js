@@ -131,7 +131,7 @@ export default Controller.extend({
 
       @method actions.toggleSidebar
     */
-    toggleSidebar() {
+    toggleInfoandBottom() {
       let sidebar = $('.ui.sidebar.main.menu');
       sidebar.sidebar('toggle');
       sidebar.toggleClass('sidebar-mini');
