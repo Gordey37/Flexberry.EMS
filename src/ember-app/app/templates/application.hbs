@@ -5,121 +5,27 @@
 {{else}}
 
 
-<div class="bgw-fix">
-  <div class="background-logo" style = "background: #3347FF;height: 12%;"> {{!-- top line with a logo and name --}}
+  <div class="bgw-fix" style = "position: fixed; top: 0;">
+    <div class="background-logo" style = "background: #3347FF;height: 12%;"> {{!-- top line with a logo and name --}}
     
-    <a class="item logo" style = "margin-left: 3%"
-      href="#"
-      target="_blank">
-      {{#link-to "index"}}<img class="ui centered image" src="https://i.ibb.co/d76Hcqf/8-DKvpmh-FKw-E.jpg" style = " height:100%; width: 100%" alt="8-DKvpmh-FKw-E" border="0">{{/link-to}}
-    </a>
-    <div class="page-header-caption" style = "margin-left: 1%"> {{#link-to 'index'}}<a style = "color: white; font-size: 32px;" href="#">EMS</a>{{/link-to}}</div>
-    <div style = "margin-left: 26.5%"> {{#link-to 'index'}}<a style = "color: white; font-size: 20px;" >Главная</a>{{/link-to}}</div>
-    <div style = "margin-left: 1%">{{#link-to 'i-i-s-e-m-s-organizer-l'}}<a style = "color: white; font-size: 20px;" >Организаторам</a>{{/link-to}}</div>
-    <div style = "margin-left: 1%">{{#link-to 'i-i-s-e-m-s-lessor-l'}}<a style = "color: white; font-size: 20px;" >Партнерам</a>{{/link-to}}</div>
-  </div>
-</div>
-
-<div style = "	display: flex;
-	flex-direction: row;
-	align-items: center;
-    justify-content: center;
-	background-color: #f0ecec;
-    width: 100%;">
-		 <div style = " margin-left: 11%;"> {{!-- --}}
-			<h1 style = "	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
-	line-height: 29px;
-	text-align: left;
-	margin-top: 60px;
-	margin-left: 70px;">
-				EVENT MANAGEMENT SYSTEM
-			</h1>
-			<div style = "width: 300px;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 27px; 
-	width: 530px;
-    margin-top: 50px;
-    margin-bottom: 100px;">
-				ЗДЕСЬ БУДЕТ КРАТКОЕ ОПИСАНИЕ СЕРВИСА, ЗАЧЕМ ОН НУЖЕН 
-				И ПРОЧАЯ ПОЛЕЗНАЯ ИНФОРМАЦИЯ. а СПРАВА БУДЕТ ОДНА 
-				ИЛИ НЕСКОЛЬКО ФОТОГРАФИЙ, ТИПА ФОТО С МЕРОПРИЯТИЙ, 
-				КОТОРЫЕ БЫЛИ ОРГАНИЗОВАНЫ С ПОМОЩЬЮ НАШЕГО СЕРВИСА
-			</div>
-			{{#link-to 'i-i-s-e-m-s-participant-l'}}
-      <button style = "text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;  
-    color: #ffffff;
-    
-    background: #3347FF;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 15px;
-	width: 520px;
-	height: 60px;	
-    border: none;
-	margin-bottom:15px;" >УЧАСТОВАТЬ В МЕРОПРИЯТИИ</button>{{/link-to }}
-			{{#link-to 'i-i-s-e-m-s-event-l'}}
-      <button style = "text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;  
-    color: #ffffff;
-    
-    background: #3347FF;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 15px;
-	width: 520px;
-	height: 60px;	
-    border: none;
-	margin-bottom:15px;">СОЗДАТЬ МЕРОПРИЯТИЕ</button> {{/link-to}}
-		</div>
-    <img style = "width: 60%; height: 60%" src="https://i.ibb.co/L5y16Hd/Graphic.jpg" alt="Graphic" border="0">
-</div>
-
-
-
-
-<div style = "position: fixed; bottom: 0; display: flex; flex-direction: row; background: #000000; height: 100px; width: 100%;">
-
-		<span style = "margin-top: 43px; font-style: normal; font-weight: 700; font-size: 14px; line-height: 15px; margin-left: 5.27%; color: white"> © 2023 EVENT MANAGEMENT SYSTEM</span>
-		<ul style = "margin-left:15%; margin-top: 35px; display: flex; flex-direction: row;">
-			{{#link-to "index"}}<a  style = "margin-right: 100px;font-weight: 700; font-size: 14px;  color: white;">О КОМПАНИИ</a>{{/link-to}}
-			{{#link-to "index"}}<a  style = "margin-right: 100px;font-weight: 700; font-size: 14px;  color: white;">КОНТАКТЫ</a>{{/link-to}}
-			{{#link-to "index"}}<a  style = "margin-right: 100px;font-weight: 700; font-size: 14px;  color: white;">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>{{/link-to}}
-			{{#link-to "index"}}<a  style = "margin-right: 100px;font-weight: 700; font-size: 14px;  color: white;">ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ</a>{{/link-to}}
-		</ul>	
-</div>
-
-
-
-{{!--
-
-<div class="ui vertical footer segment">
-  <div class="ui container flex-container">
-    <div class="ui text menu">
-      <a class="brand item" href="#">
-        {{t "forms.application.footer.application-name"}}
+      <a class="item logo" style = "margin-left: 3%"
+        href="#"
+        target="_blank">
+        {{#link-to "index"}}<img class="ui centered image" src="https://i.ibb.co/d76Hcqf/8-DKvpmh-FKw-E.jpg" style = " height:100%; width: 100%" alt="8-DKvpmh-FKw-E" border="0">{{/link-to}}
       </a>
-      <div class="right menu">
-        {{flexberry-dropdown
-          class="compact"
-          items=locales
-          value=i18n.locale
-          placeholder=(t "forms.application.header.menu.language-dropdown.placeholder")
-          settings=(hash direction="upward")
-        }}
-      </div>
+      <div class="page-header-caption" style = "margin-left: 1%"> {{#link-to 'index'}}<a style = "color: white; font-size: 32px;" href="#">EMS</a>{{/link-to}}</div>
+      <div style = "margin-left: 26.5%"> {{#link-to 'index'}}<a style = "color: white; font-size: 20px;" >Главная</a>{{/link-to}}</div>
+      <div style = "margin-left: 1%">{{#link-to 'i-i-s-e-m-s-organizer-l'}}<a style = "color: white; font-size: 20px;" >Организаторам</a>{{/link-to}}</div>
+      <div style = "margin-left: 1%">{{#link-to 'i-i-s-e-m-s-lessor-l'}}<a style = "color: white; font-size: 20px;" >Партнерам</a>{{/link-to}}</div>
     </div>
   </div>
-</div>
 
---}}
+  
+    {{outlet}}
+  
+
+
+
+
 
 {{/if}}
